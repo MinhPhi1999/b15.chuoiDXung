@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+        let text= prompt('nhập chuỗi vào đây');
+        function checkChuoi(a) {
+            if (a<=1){
+                return document.write('Chuoi dx');
+            } else {
+                if (a[0]!==a[a.length-1]){
+                    return document.write('chuoi k dx');
+                }
+            }
+            return checkChuoi(a.substring(1,a.length-1));
+        }
+        checkChuoi(text)
+
+
+</script>
+</body>
+</html>
